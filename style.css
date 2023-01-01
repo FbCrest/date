@@ -175,10 +175,6 @@ footer {
 }
 body {
   background-image: url('img/image.jpg');
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 100vh;
 }
 date {
   font-family: "Brush Script MT", Cursive;
@@ -198,4 +194,9 @@ footer {
   bottom: 0;
   pointer-events: none;
   z-index: 1000;
+}
+@media (max-width: 992px) {
+  body {
+    background-size: cover;
+  }
 }
