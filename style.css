@@ -1,3 +1,25 @@
+@font-face {
+  font-family: 'Dancing Script Bold';
+  src: url('fonts/DancingScript-Bold.ttf') format('truetype'),
+       url('path/to/fontfile.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Pacifico Regular';
+  src: url('fonts/Pacifico-Regular.ttf') format('truetype'),
+       url('path/to/fontfile.woff') format('woff');
+}
+
+#love-days {
+  font-family: 'Dancing Script Bold', sans-serif;
+}
+
+#footer {
+  font-family: 'Pacifico Regular', sans-serif;
+  font-size: 2.2rem;
+}
+
+
 html, body {
       background-color: #f6f6f6;
       margin: 0;
@@ -199,4 +221,35 @@ footer {
   body {
     background-size: cover;
   }
+}
+#heart-avatar {
+  position: relative;
+  top: -30px;
+  left: -50px;
+  animation-name: move-avatar;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+@keyframes move-avatar {
+  0% { transform: translate(0, 0); }
+  50% { transform: translate(10px, 10px); }
+  100% { transform: translate(0, 0); }
+}
+
+#heart-avatar2 {
+  position: relative;
+  top: -50px;
+  right: 650px;
+  animation-name: move-avatar2;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+@keyframes move-avatar2 {
+  0% { transform: translate(0, 0); }
+  50% { transform: translate(0px, 10px); }
+  100% { transform: translate(0, 00px); }
 }
